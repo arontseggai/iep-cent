@@ -8,3 +8,17 @@ body {
     line-height: 11.3rem;
     color: $color-beige-1;
 }
+
+.paragraph {
+    color: $color-grey-dark-3;
+    font-size: 2.1rem;
+    line-height: 1.6;
+}
+
+.text-link {
+    color: $color-red;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.1rem;
+    text-decoration: none;
+}

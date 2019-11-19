@@ -121,6 +121,24 @@ body {
   color: #fffdf3;
 }
 
+.paragraph {
+  color: #343637;
+  font-size: 2.1rem;
+  line-height: 1.6;
+}
+
+.text-link {
+  color: #be252b;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2.1rem;
+  text-decoration: none;
+}
+
+.u-margin-top-medium {
+  margin-top: 6rem;
+}
+
 .header {
   display: -ms-grid;
   display: grid;
@@ -249,5 +267,23 @@ body {
   -ms-grid-column-align: end;
       justify-self: end;
   text-align: right;
+}
+
+.section-description {
+  background-color: #fffdf3;
+  padding: 12rem 14rem 10rem 14rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=main.css.map */
