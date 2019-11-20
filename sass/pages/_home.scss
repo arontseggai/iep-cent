@@ -36,3 +36,10 @@
         grid-row: 1 / - 1;            
     }
 }
+
+.section-articles {
+    background-color: $color-beige-1;
+    display: flex;
+    justify-content: space-between;
+    padding: 10rem $side-padding-big;
+}
