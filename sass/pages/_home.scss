@@ -5,6 +5,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media only screen and (max-width: $breakpoint-medium){
+        grid-template-columns: 1fr;
+        padding: 12rem $side-padding-medium 10rem $side-padding-medium;
+    }          
 }
 
 .section-quote-1 {
@@ -15,31 +20,55 @@
     grid-template-rows: repeat(2, 1fr);
     grid-row-gap: 2rem;
     grid-column-gap: 4rem;
+
+    @media only screen and (max-width: $breakpoint-medium){
+        grid-template-columns: 1fr;
+        padding: 4rem $side-padding-medium;
+    }      
     
-    .quote {        
+    .quote {   
 
         &__text {
             grid-column: 1 / span 1;
             grid-row: 1 / span 1;   
-            align-self: end;         
+            align-self: end;      
+
+            @media only screen and (max-width: $breakpoint-medium){
+                text-align: center;
+            }                             
         }       
         
         &__quotee {
             grid-column: 1 / span 1;
             grid-row: 2 / span 1; 
-            align-self: start;                     
+            align-self: start;    
+
+            @media only screen and (max-width: $breakpoint-medium){
+                text-align: center;
+            }                                           
         }
     }
 
     .video {
         grid-column: 2 / span 1;
-        grid-row: 1 / - 1;            
+        grid-row: 1 / - 1;   
+        
+        @media only screen and (max-width: $breakpoint-medium){
+            grid-column: 1 / span 1;
+            grid-row: 3 / span 1;
+        }      
+                
     }
 }
 
 .section-articles {
     background-color: $color-beige-1;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    grid-column-gap: 10rem;
     padding: 10rem $side-padding-big;
+
+    @media only screen and (max-width: $breakpoint-big){
+        padding: 10rem $side-padding-medium;
+    }       
 }

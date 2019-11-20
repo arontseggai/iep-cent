@@ -1,11 +1,11 @@
 .article {
     display: grid;
-    grid-template-columns: min-content;
     align-content: center;
 
-    &__img {
-        max-height: 32rem;    
-        
+    &__img {  
+        width: 100%;
+        height: auto;
+
         &--sepia {
             filter: sepia(.5);    
         }
