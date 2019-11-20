@@ -2,11 +2,17 @@
     display: grid;
     grid-template-rows: 10vh repeat(4, minmax(min-content, 1fr));
     grid-template-columns: 1fr .5fr .5fr;
-
-    background-color: grey;
-    height: 75vh;
-
+    grid-column-gap: 3rem;
+    
+    background-image: url(../img/background-header.png);
+    height: 74vh;
     position: relative;
+    background-size: cover;
+
+    @media (-webkit-min-device-pixel-ratio: 2), 
+    (min-resolution: 192dpi) { 
+        background-image: url(../img/background-header@2x.png);
+    }    
 
     &__paragraph {
         grid-row: 2 / span 1;
@@ -23,9 +29,6 @@
     }
 
     &__seal {
-        margin-left: 3rem;
-        background-color: orangered;
-        border-radius: 50%;
         height: 32rem;
         width: 32rem;
 
@@ -46,7 +49,6 @@
         font-weight: 300;
         color: $color-beige-1;
         justify-self: center;
-        margin-left: 3rem;
     }
 
     &__notation {

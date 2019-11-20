@@ -1,8 +1,38 @@
 .section-description {
     background-color: $color-beige-1;
-    padding: 12rem 14rem 10rem 14rem;
+    padding: 12rem $side-padding-big 10rem $side-padding-big;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.section-quote-1 {
+    padding: 0 $side-padding-big;
+    background-color: $color-beige-2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 2rem;
+    grid-column-gap: 4rem;
+    
+    .quote {        
+
+        &__text {
+            grid-column: 1 / span 1;
+            grid-row: 1 / span 1;   
+            align-self: end;         
+        }       
+        
+        &__quotee {
+            grid-column: 1 / span 1;
+            grid-row: 2 / span 1; 
+            align-self: start;                     
+        }
+    }
+
+    .video {
+        grid-column: 2 / span 1;
+        grid-row: 1 / - 1;            
+    }
 }

@@ -22,3 +22,19 @@ body {
     font-size: 2.1rem;
     text-decoration: none;
 }
+
+.quote {    
+
+    &__text {
+        text-align: right;
+        font-size: 2.4rem;
+        font-weight: 700;
+        letter-spacing: -1px;
+        color: $color-grey-dark-3;
+    }
+    &__quotee {
+        text-align: right;
+        font-size: 1.6rem;
+        color: $color-grey-dark-1;
+    }
+}

@@ -1,0 +1,55 @@
+.video {
+    padding: 4rem 0;
+    background-color: $color-grey-dark-3;
+    cursor: pointer;
+
+    &__container {
+        width: 100%;
+        padding-top: 56.25%; 
+        position: relative;        
+    }
+
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: left;        
+    }
+
+    &__overlay {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-image: linear-gradient(rgba($color-black, .1));
+    }
+
+    &__icon {
+        fill: $color-white;
+        height: 6rem;
+        width: 6rem;
+        margin-bottom: 2rem;
+    }
+
+    &__play-text {
+        color: $color-white;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    &:hover &__overlay {
+        background-image: linear-gradient(rgba($color-black, .0));
+    }
+}
